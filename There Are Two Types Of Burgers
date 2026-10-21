@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int t,b,p,f,h,c;
+	cin>>t;
+	while(t) {
+		int profit=0;
+		cin>>b>>p>>f>>h>>c;
+ 
+		if(h>=c) {
+			int hum=min(b/2,p);
+			profit+=hum*h;
+			b-=hum*2;
+ 
+			int chick = min(b / 2, f);
+			profit += chick* c;
+		}
+		else {
+			int chicken=min(b/2,f);
+			profit+=chicken*c;
+			b-=chicken*2;
+ 
+			int hum=min(b/2,p);
+			profit+=hum*h;
+		}
+		cout << profit<<endl;
+		t--;
+	}
+}
