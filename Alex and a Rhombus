@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+    int a,n,r;
+ 
+    while(scanf("%d",&n)!=EOF)
+    {
+        a=n-1;
+        r=(n*n)+(a*a);
+        printf("%d\n",r);
+    }
+}
