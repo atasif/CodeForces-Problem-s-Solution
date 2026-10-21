@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include <stdlib.h>
+#include<math.h>
+ 
+int main ()
+{
+    int x=0;
+    long int k,n,w;
+    long long int sum=0,total=0;
+    scanf("%ld%ld%ld",&k,&n,&w);
+    sum=k;
+    for (int i=2;i<=w;i++){
+        int d=i*k;
+        sum+=d;
+    }
+    if (sum>n){
+        printf("%lld\n",sum-n);
+    }
+    else if (sum<=n){
+            printf("%d\n",x);
+ 
+    } 
+    return 0;
+}
