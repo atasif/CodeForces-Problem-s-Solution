@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include <stdlib.h>
+#include<math.h>
+#include<string.h>
+ 
+int main ()
+{
+    int t;
+    char d='0';
+    scanf("%d",&t);
+    for ( int i =1; i<=t; i++)
+    {
+        long int a,b;
+        scanf ("%ld%ld",&a,&b);
+        if (a%b==0)printf("%c\n",d);
+        else
+        {
+            int rem=a%b;
+            int move=b-rem;
+            printf("%d\n",move);
+        } 
+ 
+    }
+    return 0;
+}
