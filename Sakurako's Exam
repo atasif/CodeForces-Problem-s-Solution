@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main ()
+{ 
+    int test ;
+    cin>>test ;
+ 
+    while(test)
+    {
+        int j,k;
+        cin>>j>>k;
+        int r=j+k*2;
+        if(r%2!=0) cout << "NO\n";
+        else
+        {
+            if ((k%2==0&&j==0)||(k==0&&j%2==0)||(j!=0&&k!=0))cout << "YES\n";
+            else
+                cout << "NO\n";
+        }
+        test--;
+    }  
+}
