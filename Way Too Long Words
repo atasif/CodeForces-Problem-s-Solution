@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main ()
+{
+    int test ;
+    cin>>test;
+    while (test)
+    {
+       string s;
+       cin>>s;
+       int si=s.size();
+       if (si<=10){
+        cout<<s << endl;
+       }
+       else {
+        cout << s[0];
+        cout << si-2<<s[si-1]<<endl;
+ 
+       }
+ 
+ 
+        test--;
+    }
+ 
+    return 0;
+}
