@@ -1,0 +1,9 @@
+t = int(input())
+ 
+for i in range(t):
+    a, b, c = sorted(map(int, input().split()))
+ 
+    if a == b or b == c or a==c:
+        print(0)
+    else:
+        print(min(b - a, c - b))
