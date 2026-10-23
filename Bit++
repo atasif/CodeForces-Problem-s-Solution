@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main ()
+{
+    int test,x=0;
+    cin>>test;
+    while (test)
+    {
+        string str;
+ 
+       cin>>str;
+        if(str == "++X" || str == "X++"){
+           x=x+1;
+        }
+        else if(str == "--X" || str == "X--"){
+            x= x-1;
+        }
+        test--;
+    }
+    cout <<x<<endl;
+    return 0;
+}
