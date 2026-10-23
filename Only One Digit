@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+ 
+	int i,k,j;
+	cin>>j;
+	for(i=1; i<=j; i++) {
+		cin>>k;
+		if(k<10) {
+			cout<<k<<endl;
+		}
+		else if(k%10==0) {
+			cout<<0<<endl;
+		}
+		else {
+			int n=k,u=10;
+ 
+			while (n != 0) {
+				int last = n % 10;
+				if(last<u) {
+					u=last;
+				}
+				n /= 10;
+			}
+			cout<<u<<endl;
+		}
+	} 
+	return 0;
+}
