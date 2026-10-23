@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+	int t ;
+	cin>>t;
+ 
+	for(int i=0; i<t; i++) {
+		int n;
+		cin>>n;
+		int array[n];
+		for(int j=0; j<n; j++) cin>>array[j];
+		sort(array,array+n);
+		int key=array[n-1];
+		int term=key-array[0];
+		cout << term<<endl; 
+	}
+ 
+	return 0;
+}
