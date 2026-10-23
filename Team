@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main ()
+{
+    int test,f=0;
+    cin>>test;
+    while (test)
+    {
+        int n,sum=0;
+        for (int i=1; i<=3; i++)
+        {
+            cin>>n;
+            sum+=n;
+        }
+        if (sum>=2)
+        {
+            f++;
+            sum=0;
+        }
+ 
+        test--;
+    }
+    cout <<f<<endl;
+    return 0;
+}
