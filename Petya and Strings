@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main ()
+{
+   string f,s,F,S;
+   cin>>f>>s;
+   for (auto ch: f){
+    F+=tolower(ch);
+   }
+   for (auto c:s){
+    S+=tolower(c);
+   }
+  
+   if(F>S) cout << "1"<<endl;
+   else if(F<S) cout << "-1"<<endl;
+   else if(F==S) cout << "0"<< endl;
+ 
+ 
+    return 0;
+}
