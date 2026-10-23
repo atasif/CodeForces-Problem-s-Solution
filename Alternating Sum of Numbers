@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main ()
+{
+    int test;
+    cin>>test;
+    for (int i=1; i<=test; i++)
+    {
+        int l,sum=0;
+        cin>>l;
+        int array[l];
+        for(int j=1; j<=l; j++) cin>>array[j];
+ 
+        for(int k=1; k<=l; k++)
+        {
+            if(k%2==0) sum-=array[k];
+            else sum+=array[k];
+        }
+        cout <<sum<<endl;
+ 
+    }
+ 
+ 
+    return 0;
+}
